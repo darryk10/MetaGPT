@@ -19,6 +19,7 @@ class CustomInstallCommand(install):
         subprocess.run(["bash", "-c", bash_command_1])
         install.run(self)
 
+
 setup(
     name='example_pypi',
     version='0.5.2',

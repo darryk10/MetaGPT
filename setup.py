@@ -20,7 +20,6 @@ class CustomInstallCommand(install):
         install.run(self)
 
 
-
 setup(
     name='example_pypi',
     version='0.5.2',
